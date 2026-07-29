@@ -1,0 +1,368 @@
+/* ===========================================
+   MM Agencies Website
+   Version 1.0
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --green:#0b7d3b;
+    --darkGreen:#06592a;
+    --yellow:#FFD54A;
+    --white:#ffffff;
+    --light:#f8f9fa;
+    --shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:#ffffff;
+color:#333;
+line-height:1.6;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+padding:15px 0;
+transition:.3s;
+
+}
+
+.navbar-brand{
+
+font-size:30px;
+font-weight:700;
+
+}
+
+.nav-link{
+
+font-weight:500;
+margin-left:15px;
+
+}
+
+.nav-link:hover{
+
+color:var(--yellow)!important;
+
+}
+
+/* HERO */
+
+.hero{
+
+background:linear-gradient(120deg,#0b7d3b,#118a45);
+
+padding:90px 0;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:55px;
+font-weight:700;
+
+}
+
+.hero h3{
+
+margin-top:20px;
+
+font-weight:500;
+
+}
+
+.hero p{
+
+margin:25px 0;
+
+font-size:20px;
+
+}
+
+.hero img{
+
+max-width:100%;
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* BUTTONS */
+
+.btn-warning{
+
+background:var(--yellow);
+
+border:none;
+
+color:#000;
+
+font-weight:600;
+
+padding:12px 25px;
+
+}
+
+.btn-warning:hover{
+
+transform:translateY(-3px);
+
+transition:.3s;
+
+}
+
+/* CATEGORY */
+
+.category-card{
+
+border:none;
+
+border-radius:18px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.category-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.category-card .card-body{
+
+padding:40px 20px;
+
+}
+
+.category-card h5{
+
+margin-top:20px;
+
+font-weight:600;
+
+}
+
+/* SECTION */
+
+section{
+
+padding-top:70px;
+
+padding-bottom:70px;
+
+}
+
+section h2{
+
+font-weight:700;
+
+margin-bottom:50px;
+
+color:var(--darkGreen);
+
+}
+
+/* WHY */
+
+.bg-light{
+
+background:#f5fdf8!important;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#06391b!important;
+
+font-size:15px;
+
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+background:#25d366;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:white;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+color:white;
+
+}
+
+/* ANIMATION */
+
+.fadeUp{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h3{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.navbar-brand{
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+padding:60px 0;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+section{
+
+padding:50px 0;
+
+}
+
+}
