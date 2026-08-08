@@ -1,0 +1,5 @@
+# MM Agencies - Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://mmagencies-ff.github.io/mma-website/sitemap.xml
